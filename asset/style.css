@@ -7,7 +7,7 @@
 
 /* Color */
 
-:root {
+ :root {
     --primary-black-EaSport: #161616;
     --red-EaSport: #FB4844;
     --light-grey-EaSport: #A7A7A7;
@@ -78,12 +78,27 @@ body {
     margin-left: 10px;
 }
 
-#header-content-fixed #main_menu span.icon-dropdown {
+#header-content-fixed #main_menu div {
+    padding: 0 5px;
+}
+
+
+/* dropdown */
+
+#header-content-fixed #main_menu span.icon-dropdown-giochi,
+#header-content-fixed #main_menu span.icon-dropdown-esperienze,
+#header-content-fixed #main_menu span.icon-dropdown-informazioni,
+#header-content-fixed #main_menu span.icon-dropdown-impegni,
+#header-content-fixed #main_menu span.icon-dropdown-risorse {
     font-size: 15px;
     padding-left: 22px;
 }
 
-#icon-dropdown.upset i {
+#icon-dropdown-giochi.upset i,
+#icon-dropdown-esperienze.upset i,
+#icon-dropdown-informazioni.upset i,
+#icon-dropdown-impegni.upset i,
+#icon-dropdown-risorse.upset i {
     transition: .5s;
     transform: rotate(180deg);
 }
@@ -93,14 +108,20 @@ body {
 }
 
 #dropdown-giochi,
-#dropdown-esperienze {
-    width: 100px;
+#dropdown-esperienze,
+#dropdown-informazioni,
+#dropdown-impegni,
+#dropdown-risorse {
+    padding: 0 10px;
     display: flex;
     justify-content: center;
 }
 
 #dropdown-submenu-giochi,
-#dropdown-submenu-esperienze {
+#dropdown-submenu-esperienze,
+#dropdown-submenu-informazioni,
+#dropdown-submenu-impegni,
+#dropdown-submenu-risorse {
     visibility: hidden;
     top: 130px;
     background-color: rgba(255, 255, 255, .95);
@@ -113,19 +134,28 @@ body {
 }
 
 #dropdown-submenu-giochi ul,
-#dropdown-submenu-esperienze ul {
+#dropdown-submenu-esperienze ul,
+#dropdown-submenu-informazioni ul,
+#dropdown-submenu-impegni ul,
+#dropdown-submenu-risorse ul {
     padding: 0px 20px;
 }
 
 #dropdown-submenu-giochi.active,
-#dropdown-submenu-esperienze.active {
+#dropdown-submenu-esperienze.active,
+#dropdown-submenu-informazioni.active,
+#dropdown-submenu-impegni.active,
+#dropdown-submenu-risorse.active {
     transition: .5s;
     visibility: visible;
     top: 100px;
 }
 
 #dropdown-submenu-giochi li,
-#dropdown-submenu-esperienze li {
+#dropdown-submenu-esperienze li,
+#dropdown-submenu-informazioni li,
+#dropdown-submenu-impegni li,
+#dropdown-submenu-risorse li {
     list-style: none;
     width: 200px;
     display: flex;
@@ -133,6 +163,12 @@ body {
 }
 
 #dropdown-submenu-giochi li a,
-#dropdown-submenu-esperienze li a {
+#dropdown-submenu-esperienze li a,
+#dropdown-submenu-informazioni li a,
+#dropdown-submenu-impegni li a,
+#dropdown-submenu-risorse li a {
     text-decoration: none;
 }
+
+
+/* /#dropdown */
