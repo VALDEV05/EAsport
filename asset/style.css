@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Color */
+
+:root {
+    --primary-black-EaSport: #161616;
+    --red-EaSport: #FB4844;
+    --light-grey-EaSport: #A7A7A7;
+    --grey-EaSport: #797979;
+}
+
+body {
+    font-family: 'Sarabun', sans-serif;
+}
