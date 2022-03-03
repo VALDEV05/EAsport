@@ -17,3 +17,122 @@
 body {
     font-family: 'Sarabun', sans-serif;
 }
+
+#main {
+    background-color: #161616;
+    height: 500px;
+}
+
+#header-retractable {
+    height: 40px;
+    width: 100vw;
+    background-color: var(--primary-black-EaSport);
+}
+
+#header-retractable #actions {
+    height: 100%;
+    width: 100%;
+    color: var(--grey-EaSport);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#header-retractable #actions div {
+    padding: 0 10px;
+}
+
+#header-retractable #actions div:last-child {
+    margin-right: 20px;
+}
+
+#header-retractable #actions div i {
+    font-size: larger;
+}
+
+
+/* /#header-retractable */
+
+#header-content-fixed {
+    height: 55px;
+    width: 100vw;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+#header-content-fixed .icon {
+    margin-left: 15px;
+}
+
+#header-content-fixed #logo img {
+    margin-left: 20px;
+    height: 35px;
+}
+
+#header-content-fixed .icon i {
+    font-size: 25px;
+}
+
+#header-content-fixed #main_menu {
+    margin-left: 10px;
+}
+
+#header-content-fixed #main_menu span.icon-dropdown {
+    font-size: 15px;
+    padding-left: 22px;
+}
+
+#icon-dropdown.upset i {
+    transition: .5s;
+    transform: rotate(180deg);
+}
+
+.text-active-dropdown {
+    color: var(--red-EaSport);
+}
+
+#dropdown-giochi,
+#dropdown-esperienze {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+#dropdown-submenu-giochi,
+#dropdown-submenu-esperienze {
+    visibility: hidden;
+    top: 130px;
+    background-color: rgba(255, 255, 255, .95);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    padding: 40px 0;
+    text-transform: none;
+}
+
+#dropdown-submenu-giochi ul,
+#dropdown-submenu-esperienze ul {
+    padding: 0px 20px;
+}
+
+#dropdown-submenu-giochi.active,
+#dropdown-submenu-esperienze.active {
+    transition: .5s;
+    visibility: visible;
+    top: 100px;
+}
+
+#dropdown-submenu-giochi li,
+#dropdown-submenu-esperienze li {
+    list-style: none;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+#dropdown-submenu-giochi li a,
+#dropdown-submenu-esperienze li a {
+    text-decoration: none;
+}
