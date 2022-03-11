@@ -176,7 +176,7 @@ body {
 
 #jumbo-container {
     height: 1250px;
-    padding-top: 40px;
+    padding-top: 15px;
     position: relative;
     overflow: hidden;
 }
@@ -318,7 +318,6 @@ section#games #grid-games .game img {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: bold;
     margin: 0px auto;
     margin-top: 50px;
 }
@@ -328,3 +327,6 @@ section#games #grid-games .game img {
     height: 70px;
     width: 200px;
 }
+
+
+/* /section-games */
