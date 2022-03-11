@@ -56,6 +56,7 @@ body {
     align-items: center;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 #header-content-fixed .icon {
@@ -253,10 +254,34 @@ section#games .title {
 section#games #grid-games .game {
     height: 355px;
     width: 355px;
-    background-color: #FB4844;
+    position: relative;
 }
 
 section#games #grid-games .game img {
     height: 100%;
     width: 100%;
+}
+
+#cover {
+    position: absolute;
+    top: 0;
+    height: 355px;
+    width: 355px;
+    background: rgb(23, 17, 55);
+    background: linear-gradient(90deg, rgba(23, 17, 55, 1) 0%, rgba(251, 72, 68, 1) 100%);
+    opacity: .9;
+    display: none;
+}
+
+.game:hover #cover {
+    display: block;
+}
+
+#cover .text-cover {
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
