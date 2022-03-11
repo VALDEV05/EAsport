@@ -18,11 +18,6 @@ body {
     font-family: 'Sarabun', sans-serif;
 }
 
-#main {
-    background-color: #161616;
-    height: 500px;
-}
-
 #header-retractable {
     height: 40px;
     width: 100vw;
@@ -59,6 +54,8 @@ body {
     background-color: #fff;
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0;
 }
 
 #header-content-fixed .icon {
@@ -172,3 +169,94 @@ body {
 
 
 /* /#dropdown */
+
+
+/* Jumbo */
+
+#jumbo-container {
+    height: 1250px;
+    padding-top: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+#jumbo-container #jumbo {
+    position: absolute;
+    z-index: -10;
+}
+
+#jumbo-container #banner {
+    position: absolute;
+    bottom: 0;
+    background-color: var(--red-EaSport);
+    height: 150px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#jumbo-container #banner .text-banner {
+    font-size: 26px;
+    color: #fff;
+    text-align: start;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#jumbo-container #banner .container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#jumbo-container #banner .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#jumbo-container #banner .btn-info-banner {
+    color: #fff;
+    height: 60px;
+    width: 190px;
+    padding: 10px 20px;
+    border: 3px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+#jumbo-container #banner .btn-info-banner:hover {
+    transition: all 1s;
+    height: 70px;
+    width: 200px;
+}
+
+
+/* /jumbo */
+
+
+/* main */
+
+#main {
+    padding-top: 35px;
+}
+
+section#games .title {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 44px;
+}
+
+section#games #grid-games .game {
+    height: 355px;
+    width: 355px;
+    background-color: #FB4844;
+}
+
+section#games #grid-games .game img {
+    height: 100%;
+    width: 100%;
+}
