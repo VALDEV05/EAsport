@@ -262,6 +262,24 @@ section#games #grid-games .game img {
     width: 100%;
 }
 
+.game #logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 175px;
+    z-index: 1;
+}
+
+
+/* filter logo */
+
+.game #logo.battelfield,
+.game #logo.fifa_22 {
+    filter: invert(1);
+}
+
 #cover {
     position: absolute;
     top: 0;
@@ -271,6 +289,11 @@ section#games #grid-games .game img {
     background: linear-gradient(90deg, rgba(23, 17, 55, 1) 0%, rgba(251, 72, 68, 1) 100%);
     opacity: .9;
     display: none;
+}
+
+.game:hover #logo {
+    transition: all .5s;
+    top: 35%;
 }
 
 .game:hover #cover {
